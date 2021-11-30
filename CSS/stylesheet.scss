@@ -1,0 +1,185 @@
+// PRIMARY
+// text
+$very-dark-desaturated-blue: hsl(238, 29%, 16%);
+$soft-red: hsl(14, 88%, 65%);
+
+// bg-gradient
+$soft-violet: hsl(273, 75%, 66%);
+$soft-blue: hsl(240, 73%, 65%);
+
+// NEUTRAL
+// text
+$very-dark-grayish-blue: hsl(237, 12%, 33%);
+$dark-grayish-blue: hsl(240, 6%, 50%);
+
+// dividers
+$light-grayish-blue: hsl(240, 5%, 91%);
+
+/* kumbh-sans-700 - latin */
+@font-face {
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/kumbh-sans-v5-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/kumbh-sans-v5-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/kumbh-sans-v5-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/kumbh-sans-v5-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/kumbh-sans-v5-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/kumbh-sans-v5-latin-700.svg#KumbhSans') format('svg'); /* Legacy iOS */
+  }
+  
+  /* kumbh-sans-regular - latin */
+  @font-face {
+    font-family: 'Kumbh Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/kumbh-sans-v5-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/kumbh-sans-v5-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/kumbh-sans-v5-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/kumbh-sans-v5-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/kumbh-sans-v5-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/kumbh-sans-v5-latin-regular.svg#KumbhSans') format('svg'); /* Legacy iOS */
+  }
+  
+
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 12px;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.app {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient($soft-violet, $soft-blue);
+  display: flex;
+  // align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card {
+  width: 90%;
+  height: fit-content;
+  background-color: white;
+  padding: 11.5rem 2rem 2rem;
+  margin: 12.25rem auto 4rem;
+  border-radius: 1.85rem;
+  position: relative;
+
+  h1 {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2.75rem;
+    text-align: center;
+    margin-bottom: 2.85rem;
+  }
+
+  .topic {
+    position: relative;
+
+    h2 {
+      font-weight: 400;
+      font-size: 1.1rem;
+      color: $dark-grayish-blue;
+      margin-bottom: 1.4rem;
+    }
+
+    p {
+      // display: none;
+      // margin-bottom: 1.4rem;
+      max-height: 0px;
+      opacity: 0;
+      // transition: max-height 0.5s ease-in-out;
+      line-height: 1.4rem;
+      color: $dark-grayish-blue;
+    }
+  
+    h2:hover {
+      color: $soft-red;
+      cursor: pointer;
+    }
+
+    h2:active {
+      font-weight: 700;
+    }
+
+    img {
+      position: absolute;
+      top: 0.15rem;
+      right: -0.1rem;
+      transition: transform 0.25s ease-in-out;
+    }
+      
+    .temp-div {
+      margin-bottom: 1.4rem;
+      color: $dark-grayish-blue;
+      line-height: 1.5rem;
+    }
+
+    .divider {
+      border-top: 1px solid $light-grayish-blue;
+      margin-bottom: 1.7rem;
+    }
+      
+  }
+
+  .topic.active {
+
+    h2 {
+      font-weight: 700;
+    }
+
+    img {
+      transform: rotate(180deg);
+    }
+    p {
+      opacity: 1;
+      max-height: 300px;
+      margin-bottom: 1.4rem;
+    }
+  }
+
+}
+
+.illu-top-mob {
+  z-index: 2;
+  position: absolute;
+  top: -9rem;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.illu-bottom-mob {
+  z-index: 1;
+  position: absolute;
+  top: 0rem;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.illu-desktop {
+  display: none;
+  position: absolute;
+}
+
+.attribution { 
+  font-size: 11px; text-align: center; 
+  height: 1rem;
+  position:fixed;
+  bottom: 3rem;
+  left: 0;
+  right: 0;
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}

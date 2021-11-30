@@ -1,0 +1,111 @@
+@media screen and (min-width: 1342px) {
+
+    * {
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .app {
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        flex-direction: column;
+    }
+
+    .card-wrapper {
+        position: relative;
+
+        .illu-box {
+            z-index: 10;
+            display: block;
+            position: absolute;
+            left: 11.5%;
+            right: 88.5%;
+            margin-left: auto;
+            margin-right: auto;
+            top: 53.5%;
+            transition: left 0.25s ease;
+            animation: bounce 3s infinite ease-in-out;
+        }
+    }
+    
+    @keyframes bounce {
+        0% {
+            top: 53.5%;
+          }
+        50% {
+            top: 51.5%;
+        }
+        100% {
+            top: 53.5%;
+          }
+
+      }
+
+    .card {
+        width: 63.9%;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0 0 5rem;
+        // padding: 5.8rem 2rem 2rem;
+        margin-bottom: 4rem;
+        overflow: hidden;
+
+        .illu-mobile {
+            display: none;
+            position: absolute;
+        }
+
+        .illu-desktop {
+            display: block;
+        }
+
+        .illu-bottom {
+            z-index: 2;
+            display: block;
+            position: absolute;
+            right: 9rem;
+            top: -43rem;
+        }
+
+        .illu-top {
+            z-index: 3;
+            display: block;
+            position: absolute;
+            left: -7rem;
+            top: 15%;
+        }
+
+   
+
+        p {
+            line-height: 1.5rem;
+        }
+
+        .left-side {
+            position: relative;
+            left:0rem;
+            width: 100%;
+            height: 100%;
+            // overflow: hidden;
+        }
+
+        .questions {
+            width: 100%;
+            padding-left: 3.7rem;
+            padding-right: 7.1rem;
+            padding-top: 5.8rem;
+
+            h1 {
+                text-align: left;
+                margin-bottom: 3.33rem;
+            }
+        }
+
+    }
+
+}

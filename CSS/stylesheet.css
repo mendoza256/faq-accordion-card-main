@@ -1,0 +1,169 @@
+/* kumbh-sans-700 - latin */
+@font-face {
+  font-family: 'Kumbh Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/kumbh-sans-v5-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/kumbh-sans-v5-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/kumbh-sans-v5-latin-700.woff2") format("woff2"), url("../fonts/kumbh-sans-v5-latin-700.woff") format("woff"), url("../fonts/kumbh-sans-v5-latin-700.ttf") format("truetype"), url("../fonts/kumbh-sans-v5-latin-700.svg#KumbhSans") format("svg");
+  /* Legacy iOS */
+}
+
+/* kumbh-sans-regular - latin */
+@font-face {
+  font-family: 'Kumbh Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/kumbh-sans-v5-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/kumbh-sans-v5-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/kumbh-sans-v5-latin-regular.woff2") format("woff2"), url("../fonts/kumbh-sans-v5-latin-regular.woff") format("woff"), url("../fonts/kumbh-sans-v5-latin-regular.ttf") format("truetype"), url("../fonts/kumbh-sans-v5-latin-regular.svg#KumbhSans") format("svg");
+  /* Legacy iOS */
+}
+
+* {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 12px;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.app {
+  height: 100vh;
+  width: 100vw;
+  background: -webkit-gradient(linear, left top, left bottom, from(#af67e9), to(#6565e7));
+  background: linear-gradient(#af67e9, #6565e7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card {
+  width: 90%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: white;
+  padding: 11.5rem 2rem 2rem;
+  margin: 12.25rem auto 4rem;
+  border-radius: 1.85rem;
+  position: relative;
+}
+
+.card h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 2.75rem;
+  text-align: center;
+  margin-bottom: 2.85rem;
+}
+
+.card .topic {
+  position: relative;
+}
+
+.card .topic h2 {
+  font-weight: 400;
+  font-size: 1.1rem;
+  color: #787887;
+  margin-bottom: 1.4rem;
+}
+
+.card .topic p {
+  max-height: 0px;
+  opacity: 0;
+  line-height: 1.4rem;
+  color: #787887;
+}
+
+.card .topic h2:hover {
+  color: #f47c57;
+  cursor: pointer;
+}
+
+.card .topic h2:active {
+  font-weight: 700;
+}
+
+.card .topic img {
+  position: absolute;
+  top: 0.15rem;
+  right: -0.1rem;
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  transition: -webkit-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+}
+
+.card .topic .temp-div {
+  margin-bottom: 1.4rem;
+  color: #787887;
+  line-height: 1.5rem;
+}
+
+.card .topic .divider {
+  border-top: 1px solid #e7e7e9;
+  margin-bottom: 1.7rem;
+}
+
+.card .topic.active h2 {
+  font-weight: 700;
+}
+
+.card .topic.active img {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.card .topic.active p {
+  opacity: 1;
+  max-height: 300px;
+  margin-bottom: 1.4rem;
+}
+
+.illu-top-mob {
+  z-index: 2;
+  position: absolute;
+  top: -9rem;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.illu-bottom-mob {
+  z-index: 1;
+  position: absolute;
+  top: 0rem;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.illu-desktop {
+  display: none;
+  position: absolute;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  height: 1rem;
+  position: fixed;
+  bottom: 3rem;
+  left: 0;
+  right: 0;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=stylesheet.css.map */

@@ -1,0 +1,117 @@
+@media screen and (min-width: 1342px) {
+  * {
+    margin: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .app {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card-wrapper {
+    position: relative;
+  }
+  .card-wrapper .illu-box {
+    z-index: 10;
+    display: block;
+    position: absolute;
+    left: 11.5%;
+    right: 88.5%;
+    margin-left: auto;
+    margin-right: auto;
+    top: 53.5%;
+    -webkit-transition: left 0.25s ease;
+    transition: left 0.25s ease;
+    -webkit-animation: bounce 3s infinite ease-in-out;
+            animation: bounce 3s infinite ease-in-out;
+  }
+  @-webkit-keyframes bounce {
+    0% {
+      top: 53.5%;
+    }
+    50% {
+      top: 51.5%;
+    }
+    100% {
+      top: 53.5%;
+    }
+  }
+  @keyframes bounce {
+    0% {
+      top: 53.5%;
+    }
+    50% {
+      top: 51.5%;
+    }
+    100% {
+      top: 53.5%;
+    }
+  }
+  .card {
+    width: 63.9%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    align-items: center;
+    padding: 0 0 5rem;
+    margin-bottom: 4rem;
+    overflow: hidden;
+  }
+  .card .illu-mobile {
+    display: none;
+    position: absolute;
+  }
+  .card .illu-desktop {
+    display: block;
+  }
+  .card .illu-bottom {
+    z-index: 2;
+    display: block;
+    position: absolute;
+    right: 9rem;
+    top: -43rem;
+  }
+  .card .illu-top {
+    z-index: 3;
+    display: block;
+    position: absolute;
+    left: -7rem;
+    top: 15%;
+  }
+  .card p {
+    line-height: 1.5rem;
+  }
+  .card .left-side {
+    position: relative;
+    left: 0rem;
+    width: 100%;
+    height: 100%;
+  }
+  .card .questions {
+    width: 100%;
+    padding-left: 3.7rem;
+    padding-right: 7.1rem;
+    padding-top: 5.8rem;
+  }
+  .card .questions h1 {
+    text-align: left;
+    margin-bottom: 3.33rem;
+  }
+}
+/*# sourceMappingURL=stylesheet1440.css.map */
