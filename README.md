@@ -2,6 +2,6 @@
 
 ![Design preview for the FAQ accordion card coding challenge](./design/desktop-preview.jpg)
 
-## Live Page
+## [Live Page](https://faq-accordion-card-main-lac-pi.vercel.app/)
 
-https://faq-accordion-card-main-git-main-mendoza256.vercel.app
+Simple CSS and JS excercise. Learnings were how to hide HTML elements on click with Javascript. 
